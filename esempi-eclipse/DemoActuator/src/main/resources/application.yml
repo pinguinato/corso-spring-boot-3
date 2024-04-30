@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: DemoActuator
+
+server:
+  port: 9100
+   
+################################
+# Actuators ####################
+################################
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        
+info:
+  assistenza:
+    nome: Roberto
+    cognome: Gianotto
+    email: gianottoroberto@gmail.com
+    
+  nome: 
+    name-app: "Prova attuatore"

@@ -1,0 +1,21 @@
+server:
+  port: 8082
+  
+spring:
+  application:
+    name: DemoLogging
+    
+logging:
+  file:
+    name: DemoLogging.log
+    max-size: 1MB
+  pattern:
+    file: "%d{ dd-MM-yyyyy } [%thread] %-5level %logger{36} - %msg%n"
+  level:
+    root: INFO
+    org.springframework.security: DEBUG
+    org.hibernate: INFO
+    org.springframework.web: INFO
+    # in questo modo posso settare i livelli specifici per ogni package
+    
+    
